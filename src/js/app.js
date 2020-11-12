@@ -9,12 +9,9 @@ let myBooks = [];
 const bookId = 0;
 
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = !!read;
-  this.id = bookId;
+const Book = (title, author, pages, read) => {
+  return {title, author, pages, read}
+  
 }
 
 const addBooks = () => {
@@ -26,7 +23,7 @@ const addBooks = () => {
 
 
   if (title && author && pages) {
-    const newBook = new Book(title, author, pages, read, id);
+    const newBook = Book(title, author, pages, read, id);
 
     myBooks.unshift(newBook);
     localStorage.setItem('data', JSON.stringify(myBooks));

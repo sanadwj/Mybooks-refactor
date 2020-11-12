@@ -104,7 +104,7 @@ function createTable(book) {
   const rtr = document.createElement('a');
   rtr.setAttribute('id', 'check');
   rtr.setAttribute('href', '');
-  rtr.setAttribute('onclick', `updateReadStatus()`);
+  rtr.setAttribute('onclick', 'updateReadStatus()');
   rtr.innerHTML = `${book.read ? 'Read' : 'Unread'}`;
   rtr.classList.add('btn');
   rtr.classList.add('btn-info');
@@ -116,7 +116,7 @@ function createTable(book) {
   const dDiv = document.createElement('div');
   const dtr = document.createElement('button');
   dtr.setAttribute('id', 'remove');
-  dtr.setAttribute('onclick', `deleteBook()`);
+  dtr.setAttribute('onclick', 'deleteBook()');
   dtr.innerHTML = 'Remove';
   dtr.classList.add('btn');
   dtr.classList.add('btn-danger');

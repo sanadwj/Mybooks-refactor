@@ -6,13 +6,11 @@ addContent();
 const submit = document.getElementById('submit');
 
 let myBooks = [];
-const bookId = 0;
 
 
 const Book = (title, author, pages, read) => {
-  return {title, author, pages, read}
-  
-}
+  return { title, author, pages, read };
+};
 
 const addBooks = () => {
   const title = document.getElementById('title').value;

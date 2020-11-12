@@ -15,7 +15,10 @@
     "no-param-reassign": "off",
     "eol-last": "off",
     "arrow-parens": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "arrow-body-style":"off",
+    "func-names":"off",
+    "object-curly-newline":"off"
   },
   "ignorePatterns": [
     "dist/",
